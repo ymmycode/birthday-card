@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+    supported by Chrome, Edge, Opera and Firefox */
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    overflow: hidden;
+}
+
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+    z-index: 1;
+    /* clip-path: circle(0% at 50% 62%); */
+    /* transition: clip-path 2s linear; */
+    /* transition: clip-path 2s cubic-bezier(0.83, 0, 0.17, 1); */
+}
+
+/* .webgl.show
+{
+    clip-path: circle(100% at 50% 62%);
+} */
+
+.loading-screen
+{
+    position: absolute;
+    z-index: 2;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+
+    clip-path: circle(100% at 50% 62%);
+}
+
+.counter
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20vmin;
+    transition: opacity 0.5s linear;
+}
+
+.counter.hide
+{
+    opacity: 0;
+}
+
+.content
+{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 10vmin;
+    font-family: 'Montserrat', sans-serif;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    opacity: 0;
+    transition: opacity 1.5s linear;
+    transition-delay: 0.5s;
+}
+
+.content.show
+{
+    opacity: 1;
+}
+
+.content span
+{
+    margin-bottom: 60px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.button
+{
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 20px;
+    cursor: pointer;
+
+    transition: background-color 0.3s linear;
+}
+
+.button span
+{
+    font-weight: 400;
+}
+
+.button:hover
+{
+    background-color: black;
+    color: white;
+}
