@@ -172,7 +172,7 @@ export default class Experience
     enableControls()
     {
         this.controls.enableZoom = true
-        this.controls.enablePan = true
+        // this.controls.enablePan = true
         this.controls.enabled = true
     }
 
