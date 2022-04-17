@@ -20,6 +20,6 @@ button.addEventListener(`click`, ()=>
 
     tl.play()
 
-    setTimeout(() => {experience.enableControls()}, 28000)
+    setTimeout(() => {experience.enableControls()}, 30000)
 
 })
